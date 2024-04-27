@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.First-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255,250,205);
+}
+.First-two{
+    font-size: 20px;
+    padding-left: 20px;
+    color: rgb(255,0,0);
+}
+.First-three {
+    font-size: 20px;
+    padding-right: 20px;
+    color: rgb(255,0,0);
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+}
+.exchange{
+    position: fixed;
+    top: 25%;
+    left: 45%;
+}
+input, select, button{
+    margin: 10px;
+    padding:10px;
+}
+#Res{
+    justify-content: center;
+    align-items: center; 
+}
+#result{
+    margin: 10px;
+    padding:10px;
+}
+#curren{
+    justify-content: center;
+    align-items: center;
+}
+#curren-two{
+    justify-content: center;
+    align-items: center;
+}
+.First-one-bottom{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+}
+a{
+    color: rgb(255,0,0);
+    text-decoration: none;
+}
+a:hover{
+   color: #7FFF00;
+}
+@media all and (max-width: 1200px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .First-one{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .First-two {
+        padding: 10px 0px 5px 0px;
+    }
+    .First-three {
+        padding: 5px 0px 10px 0px;
+    }
+}
