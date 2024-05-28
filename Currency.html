@@ -1,67 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informacja</title>
+    <title>Prosty Konwerter Walut</title>
     <link rel="stylesheet" type="text/css" href="Currency.css">
 </head>
 <body>
-    <div class="First-one">
-        <div class="First-two">
-            <a href="Currency.html">Przelicznik walut</a>
-        </div>
-        <div class="First-three">
-           <a href="Informacja.html">Informacja</a>
-        </div>
-    </div>
-    <div class="exchange">
-        <h1>Przewalutowanie</h1>
-        <select id="forCurrency">
-            <div id="curren">
-            <option value="CHF">PLN</option>
-            <option value="PLN">CHF</option>
-            <option value="EUR">EUR</option>
-            <option value="USD">USD</option>
-            <option value="GBP">GBP</option>
-            <option value="AED">AED</option>
-            <option value="SEK">SEK</option>
-            <option value="NOK">NOK</option>
-            <option value="KRW">KRW</option>
-            <option value="JPY">JPY</option>
-        </select>
-        <select id="toCurrency">
-            <option value="CHF">EUR</option>
-            <option value="PLN">KRW</option>
-            <option value="EUR">NOK</option>
-            <option value="USD">SEK</option>
-            <option value="GBP">AED</option>
-            <option value="AED">GPD</option>
-            <option value="SEK">USD</option>
-            <option value="NOK">CHF</option>
-            <option value="KRW">PLN</option>
-            <option value="JPY">JPY</option>
-        </select>
-        <div id="curren-two">
-            <input type="number" id="amount" placeholder="sum">
-        </div>
-        <button onclick="convertCurrency()">
-            Przeliczanie
-        </button>
-            <div id="Res">
-                <input type="text" id="result" readonly>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="Currency.html">Konwerter Walut</a>
+                <a href="Informacja.html">Informacja</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Konwerter Walut</h1>
+            <div class="converter">
+                <div class="field">
+                    <label for="forCurrency">Z:</label>
+                    <select id="forCurrency">
+                        <option value="PLN">PLN</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="SEK">SEK</option>
+                        <option value="NOK">NOK</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="toCurrency">Na:</label>
+                    <select id="toCurrency">
+                        <option value="PLN">PLN</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="SEK">SEK</option>
+                        <option value="NOK">NOK</option>
+                        <option value="JPY">JPY</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="amount">Kwota:</label>
+                    <input type="number" id="amount" placeholder="Wprowadź kwotę">
+                </div>
+                <button onclick="convertCurrency()">Konwertuj</button>
+                <div class="result">
+                    <label for="result">Wynik:</label>
+                    <input type="text" id="result" readonly>
+                </div>
             </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Konwerter Walut</p>
+        </footer>
     </div>
-    <div class="First-one-bottom">
-    <div class="First-one">
-        <div class="First-two">
-          <a href="Currency.html">Przelicznik walut</a>
-        </div>
-        <div class="First-three">
-            <a href="Informacja.html">Informacja</a>
-        </div>
-    </div>
-</div>
     <script src="Informacja.js"></script>
 </body>
 </html>
